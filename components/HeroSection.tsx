@@ -1,8 +1,10 @@
 import { newAgeFont } from "@/lib/fonts/font";
-import {AnimatedQuoteButton} from "@/components/GetStartedBtn"
+import { GetStartedBtn } from "@/components/GetStartedBtn";
 export const HeroSection = () => {
   return (
-    <section className="w-full flex  flex-col items-center justify-center my-20">
+    <section
+      className={`w-full flex  flex-col items-center justify-center my-20 ${newAgeFont.className}`}
+    >
       <div className="group p-1 rounded-full hover:border">
         <div className="bg-[#F6F6F8] rounded-full px-4 py-2 border flex space-x-2 items-center justify-center  group-hover:cursor-pointer">
           <img className="h-4 w-4" src="/sparkles-black.svg" />
@@ -13,17 +15,20 @@ export const HeroSection = () => {
       </div>
 
       {/* hero text */}
-      <div className="my-7 flex flex-col justify-center items-center text-black">
-        <h1 className={`${newAgeFont.className} text-8xl text-center`}>
-          LinkedIn Pages
-        </h1>
-        <h1 className={`${newAgeFont.className} text-8xl text-center`}>
-          into Portfolio Sites
-        </h1>
+      <div className="my-8 flex flex-col justify-center items-center text-black">
+        <h1 className={` text-8xl text-center`}>LinkedIn Pages</h1>
+        <h1 className={`text-8xl text-center`}>into Portfolio Sites</h1>
       </div>
-      <div className="my-5 flex justify-center items-center">
-        <AnimatedQuoteButton/>
+      {/* sub heading */}
+      <div className="flex mb-7 flex-col text-lg text-black justify-center items-center">
+        <h4>Create a Professional Portfolio Website from Your LinkedIn and</h4>
+        <h4>Get Noticed Instantly</h4>
+      </div>
+      <div className=" flex justify-center items-center">
+        <GetStartedBtn />
       </div>
     </section>
   );
 };
+
+
