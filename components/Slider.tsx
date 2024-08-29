@@ -1,8 +1,10 @@
 'use client'
-
+import React from "react";
 import { useState } from "react";
 import { newAgeFont } from "@/lib/fonts/font";
 import { GetStartedBtn } from "@/components/GetStartedBtn";
+
+
 
 export const SliderSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -91,19 +93,7 @@ style={{backgroundImage:"url(/top.svg)"}}
           <div className="spacer" style={{ width: "0rem", height: "0px" }}></div>
           <div className="text-size-regular">Get a free quote</div>
         </a>
-        <a
-          href="https://calendly.com/andyhooke/quick-chat"
-          target="_blank"
-          className="button is-secondary is-icon w-inline-block"
-        >
-          <img
-            src="https://cdn.prod.website-files.com/668ebb5fda4eee91ba68ef54/668fae43a69ad1a4e5f1c16c_Avatar%20Image%20(2).png"
-            loading="lazy"
-            alt=""
-            className="button-avatar"
-          />
-          <div>Book an intro call</div>
-        </a>
+      
       </div>
     </div>
     <div id="w-node-_815ef432-bdd1-1797-24e8-d2b6c4da65b5-ba68efbe" className="solutions_content-right">
@@ -249,3 +239,6 @@ style={{backgroundImage:"url(/top.svg)"}}
 
   );
 };
+
+
+

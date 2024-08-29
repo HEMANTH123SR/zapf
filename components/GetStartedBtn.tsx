@@ -1,9 +1,16 @@
 "use client";
-import { Zap } from "lucide-react";
+
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
-export const GetStartedBtn: React.FC = () => {
+
+export const GetStartedBtn = ({
+  title,
+  Icon,
+}: {
+  title: string;
+  Icon: React.ElementType;
+}) => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const arrowRef = useRef<SVGSVGElement | null>(null);
   const roundedDivRef = useRef<HTMLDivElement | null>(null);
@@ -23,15 +30,19 @@ export const GetStartedBtn: React.FC = () => {
           opacity: 1,
           marginLeft: 0,
         })
-        .to(arrowRef.current, {
-          duration: 0.5,
-          height: "1.75rem",
-          width: "1.75rem",
-          opacity: 1,
-          x: 40,
-          color: "#000000",
-          display: "block",
-        }, "-=0.25");
+        .to(
+          arrowRef.current,
+          {
+            duration: 0.5,
+            height: "1.75rem",
+            width: "1.75rem",
+            opacity: 1,
+            x: 40,
+            color: "#000000",
+            display: "block",
+          },
+          "-=0.25"
+        );
     }
 
     return () => {
@@ -66,15 +77,13 @@ export const GetStartedBtn: React.FC = () => {
       onMouseLeave={handleMouseLeave}
       className="flex relative items-center justify-center gap-2 h-14 rounded-lg bg-black text-white transition-colors duration-300 text-lg w-auto p-2"
     >
-      <Zap
-        ref={arrowRef}
-        className="text-blue-500 absolute z-10 h-7 w-9 opacity-0 -left-6"
-      />
+      <Icon ref={arrowRef} className="absolute z-10 h-7 w-9 opacity-0 -left-6" />
       <div
         className="h-[0.70rem] w-[0.70rem] rounded-full ml-5 bg-white mr-4"
         ref={roundedDivRef}
       ></div>
-      <span className="pr-5">Get a free quote</span>
+      <span className="pr-5">{title}</span>
     </button>
   );
 };
+

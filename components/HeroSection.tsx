@@ -1,5 +1,5 @@
 import { newAgeFont } from "@/lib/fonts/font";
-import { GetStartedBtn } from "@/components/GetStartedBtn";
+import { HeroSectionActionButtons } from "@/components/HeroSectionActionButtons";
 export const HeroSection = () => {
   return (
     <section
@@ -9,15 +9,15 @@ export const HeroSection = () => {
         <div className="bg-[#F6F6F8] rounded-full px-4 py-2 border flex space-x-2 items-center justify-center  group-hover:cursor-pointer">
           <img className="h-4 w-4" src="/sparkles-black.svg" />
           <span className="text-sm">
-            Make Your LinkedIn Page a Portfolio Website With One Click
+          One Click Can Turn Your LinkedIn Profile Into Portfolio And Resume!
           </span>
         </div>
       </div>
 
       {/* hero text */}
       <div className="my-8 flex flex-col justify-center items-center text-black">
-      <h1 className="text-8xl text-center">Fresh Portfolio Website</h1>
-      <h1 className="text-8xl text-center">and Resume in a Zap</h1>
+        <h1 className="text-8xl text-center">Your Ideal Portfolio and Resume in a ZAP!!</h1>
+        {/* <h1 className="text-8xl text-center">Ready in Minutes!</h1> */}
       </div>
       {/* sub heading */}
       <div className="flex mb-7 flex-col  text-sm text-black justify-center items-center">
@@ -26,9 +26,8 @@ export const HeroSection = () => {
         </h4>
         <h4 className="text-xl">Get Noticed Instantly</h4>
       </div>
-      <div className=" flex justify-center items-center">
-        <GetStartedBtn />
-      </div>
+
+      <HeroSectionActionButtons />
     </section>
   );
 };
