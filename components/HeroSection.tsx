@@ -16,8 +16,8 @@ export const HeroSection = () => {
 
       {/* hero text */}
       <div className="my-8 flex flex-col justify-center items-center text-black">
-        <h1 className={` text-8xl text-center`}>LinkedIn Pages</h1>
-        <h1 className={`text-8xl text-center`}>into Portfolio Sites</h1>
+      <h1 className="text-8xl text-center">Fresh Portfolio Website</h1>
+      <h1 className="text-8xl text-center">and Resume in a Zap</h1>
       </div>
       {/* sub heading */}
       <div className="flex mb-7 flex-col  text-sm text-black justify-center items-center">
