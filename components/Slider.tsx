@@ -35,7 +35,10 @@ export const SliderSection = () => {
   };
 
   return (
-<div className="padding-section-large">
+<div className="padding-section-large "
+style={{backgroundImage:"url(/top.svg)"}}
+>
+  
   <div 
     className="w-layout-grid solutions_component" 
     style={{
