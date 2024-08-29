@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { newAgeFont } from "@/lib/fonts/font";
-import { AnimatedQuoteButton } from "@/components/GetStartedBtn";
+import { GetStartedBtn } from "@/components/GetStartedBtn";
 
 export const SliderSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
