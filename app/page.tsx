@@ -1,6 +1,10 @@
+
 import { Nav } from "@/components/Nav";
 import { HeroSection } from "@/components/HeroSection";
 import { SliderSection } from "@/components/Slider";
+import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
+import { cn } from "@/lib/utils";
+
 export default function Home() {
   return (
     <main className="h-full text-black  flex flex-col w-screen px-5 sm:px-7 md:px-10 lg:px-12 xl:px-16">
@@ -16,6 +20,16 @@ export default function Home() {
         </div>
         <SliderSection />
       </section>
+      <AnimatedGridPattern
+        numSquares={100}
+        maxOpacity={0.4}
+        duration={3}
+        repeatDelay={0}
+        className={cn(
+          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+        )}
+      />  
     </main>
   );
 }

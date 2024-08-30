@@ -1,4 +1,5 @@
 'use client'
+import "@/styles/Slider.css"
 import React from "react";
 import { useState } from "react";
 import { newAgeFont } from "@/lib/fonts/font";

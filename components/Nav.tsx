@@ -3,13 +3,13 @@ import Link from "next/link";
 export const Nav = () => {
   return (
     <header
-      className="w-full flex justify-between items-center custom-dashed-border px-7 lg:px-14 py-3 lg:py-5 "
+      className="w-full z-10 flex justify-between items-center custom-dashed-border px-7 lg:px-14 py-3 lg:py-5 bg-white "
       style={{ backgroundImage: "url('/left-right.svg')", fontWeight: "500" }}
     >
       {/* left navigation content  */}
-      <nav className="flex space-x-8 items-center text-black ">
+      <nav className="flex space-x-9 items-center text-black ">
         <Link href={"/"}>
-          <img className="h-12 w-12 lg:h-14 lg:w-14  " src="/logo.svg" />
+          <img className="h-12 w-12 lg:h-14 lg:w-14  " src="/logo.png" />
         </Link>
         {/* <Link href={"/"}>Themes</Link> */}
         <Link href={"/"} className="lg:block hidden">
@@ -18,9 +18,7 @@ export const Nav = () => {
         <Link href={"/"} className="lg:block hidden">
           Dashboard
         </Link>
-        <Link href={"/"} className="lg:block hidden">
-          FAQs
-        </Link>
+       
         <Link href={"/"} className="lg:block hidden">
           Pricing
         </Link>

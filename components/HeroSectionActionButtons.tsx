@@ -11,9 +11,11 @@ export const HeroSectionActionButtons = () => {
     <div className=" flex justify-center space-x-12 items-center">
       <GetStartedBtn
         title="create your portfolio"
-       Icon={ChevronsLeftRightEllipsis}
+       Icon={Zap}
       />
       <GetStartedBtn title="create your resume" Icon={File} />
     </div>
   );
 };
+
+
