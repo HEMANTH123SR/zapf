@@ -1,4 +1,3 @@
-import { Nav } from "@/components/Nav";
 import { HeroSection } from "@/components/HeroSection";
 import { SliderSection } from "@/components/Slider";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
@@ -9,8 +8,7 @@ import { Faq } from "@/components/Faq";
 
 export default function Home() {
   return (
-    <main className="h-full text-black  flex flex-col w-screen px-5 sm:px-7 md:px-10 lg:px-12 xl:px-16">
-      <Nav />
+    <main className="flex flex-col">
       <section
         className="w-full"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}
