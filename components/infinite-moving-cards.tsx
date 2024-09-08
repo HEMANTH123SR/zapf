@@ -82,7 +82,7 @@ export function InfiniteMovingCards() {
                 minWidth: "700px",
                 height: "auto",
               }}
-              className="m-6 border-none shadow-none transition-transform duration-300 hover:scale-105"
+              className="m-6 border-none shadow-none transition-transform duration-300 "
             >
               <CardContent className="p-4">
                 <img
