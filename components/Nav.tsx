@@ -8,13 +8,17 @@ export const Nav = () => {
     >
       {/* left navigation content  */}
       <nav className="flex space-x-9 items-center text-black ">
-        <Link href={"/"}>
+        <Link href={"/"} className="flex items-center justify-center ">
+          <img className="h-10 w-auto  " src="/logo3.png" />
+          <h1 className=" text-4xl">apfolio</h1>
+        </Link>
+        {/* <Link href={"/"} className="flex items-center justify-center ">
           <img
             className="h-16 w-auto  "
             src="/zapfolio-logo.png"
           />
-        </Link>
-        {/* <Link href={"/"}>Themes</Link> */}
+        </Link> */}
+
         <Link href={"/"} className="lg:block hidden">
           Themes
         </Link>

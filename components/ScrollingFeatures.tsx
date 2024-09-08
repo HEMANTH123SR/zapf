@@ -45,12 +45,15 @@ export function MarqueeDemo() {
         className="[--duration:60s] border-none  "
         style={{ backgroundImage: "url('/top.svg')" }}
       >
-        <FeatureCard name="Sage/ai" Icon={Bot} />
+        <FeatureCard name="zappy/ai" Icon={Bot} />
         <FeatureCard name="Linkedin Data Import" Icon={Linkedin} />
         <FeatureCard name="Free Templates" Icon={LayoutTemplate} />
         <FeatureCard name="no-code" Icon={Code} />
         <FeatureCard name="Drag & Drop" Icon={GripVertical} />
-        <FeatureCard name="Customizable Portfolio" Icon={SquareBottomDashedScissors} />
+        <FeatureCard
+          name="Customizable Portfolio"
+          Icon={SquareBottomDashedScissors}
+        />
         <FeatureCard name="SEO Optimzation" Icon={ChartNoAxesCombined} />
       </Marquee>
     </div>

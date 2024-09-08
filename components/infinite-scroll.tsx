@@ -18,7 +18,7 @@ export function InfiniteScroll() {
             Portfolio Website from Your LinkedIn and
           </p>
           <div className="flex w-full justify-center items-center">
-            <GetStartedBtnWhite title="create your portfolio" Icon={Zap} />
+            <GetStartedBtnWhite title="get started" Icon={Zap} />
           </div>
         </div>
       </div>

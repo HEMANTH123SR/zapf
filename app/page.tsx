@@ -1,5 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
-import { SliderSection } from "@/components/Slider";
+import { Slider } from "@/components/Slider";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { ExampleSection } from "@/components/ExampleSection";
@@ -21,7 +21,7 @@ export default function Home() {
             src="/star.svg"
           />
         </div>
-        <SliderSection />
+        <Slider />
       </section>
       <AnimatedGridPattern
         numSquares={100}
