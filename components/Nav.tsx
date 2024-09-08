@@ -9,7 +9,10 @@ export const Nav = () => {
       {/* left navigation content  */}
       <nav className="flex space-x-9 items-center text-black ">
         <Link href={"/"}>
-          <img className="h-12 w-12 lg:h-14 lg:w-14  " src="/logo.png" />
+          <img
+            className="h-16 w-auto  "
+            src="/zapfolio-logo.png"
+          />
         </Link>
         {/* <Link href={"/"}>Themes</Link> */}
         <Link href={"/"} className="lg:block hidden">
@@ -18,7 +21,7 @@ export const Nav = () => {
         <Link href={"/"} className="lg:block hidden">
           Dashboard
         </Link>
-       
+
         <Link href={"/"} className="lg:block hidden">
           Pricing
         </Link>

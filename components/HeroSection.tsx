@@ -1,7 +1,7 @@
 "use client";
-import Particles from "@/components/magicui/particles";
+
 import { newAgeFont } from "@/lib/fonts/font";
-import { Zap, File } from "lucide-react";
+import { Zap, File, Accessibility } from "lucide-react";
 import { GetStartedBtn } from "@/components/GetStartedBtn";
 import { MarqueeDemo } from "@/components/ScrollingFeatures";
 export const HeroSection = () => {
@@ -38,9 +38,9 @@ export const HeroSection = () => {
       </div>
       <MarqueeDemo />
       <div className="flex  justify-between w-full">
-          <img className="h-4 w-4 relative -left-4 -top-2" src="/star.svg" />
-          <img className="h-4 w-4 relative -right-4 -top-2" src="/star.svg" />
-        </div>
+        <img className="h-4 w-4 relative -left-4 -top-2" src="/star.svg" />
+        <img className="h-4 w-4 relative -right-4 -top-2" src="/star.svg" />
+      </div>
       <div className="relative z-50 w-screen flex justify-center items-center">
         <video
           className="mt-24  -bottom-1/2 border rounded-2xl w-[95vw] h-auto max-h-[80vh]   object-cover object-top"
@@ -53,7 +53,7 @@ export const HeroSection = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      
+
       {/* <Particles
         className="absolute inset-0"
         quantity={500}
@@ -61,7 +61,6 @@ export const HeroSection = () => {
         color={"#000000"}
         refresh
       /> */}
-
     </section>
   );
 };
