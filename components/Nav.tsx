@@ -34,7 +34,7 @@ export const Nav = () => {
         </div>
         <div className="p-1.5 rounded-xl bg-[#F2F3F2] border lg:hidden">
           <Menu
-            className="h-5 w-5 sm:h-8 sm:w-8 md:w-9 md:h-9 text-[#2C2B2B] "
+            className="h-5 w-5 sm:h-8 sm:w-8 cursor-pointer text-[#2C2B2B] "
             strokeWidth={2.5}
           />
         </div>
