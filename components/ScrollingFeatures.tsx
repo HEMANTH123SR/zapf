@@ -20,14 +20,14 @@ const FeatureCard = ({
   return (
     <figure
       className={cn(
-        ` w-[25vw] flex space-x-3 justify-center items-center cursor-pointer overflow-hidden  bg-white  py-3 ${newAgeFont.className}`
+        `w-[55vw]   md:w-[40vw] lg:w-[30vw] xl:w-[25vw] flex space-x-3 justify-center items-center cursor-pointer overflow-hidden  bg-white py-1 sm:py-2 md:py-3 ${newAgeFont.className}`
       )}
       style={{ backgroundImage: "url('/right.svg')" }}
     >
-      <div className="p-3 rounded-xl bg-[#F2F3F2] border">
-        <Icon className="h-7 w-8 text-black" />
+      <div className="p-2.5 md:p-3 rounded-xl bg-[#F2F3F2] border">
+        <Icon className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-8 text-black" />
       </div>
-      <span className="text-lg font-semibold">{name}</span>
+      <span className="text-sm md:text-lg font-semibold">{name}</span>
     </figure>
   );
 };
@@ -35,7 +35,7 @@ const FeatureCard = ({
 export function MarqueeDemo() {
   return (
     <div
-      className="relative mt-16 mb-0 z-10 bg-white flex  w-full flex-col items-center justify-center overflow-hidden  "
+      className="relative mt-6 sm:mt-8 md:mt-16 mb-0 z-10 bg-white flex  w-full flex-col items-center justify-center overflow-hidden  "
       style={{ backgroundImage: "url('/bottom.svg')" }}
     >
       <Marquee
