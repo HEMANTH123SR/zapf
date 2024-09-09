@@ -2,12 +2,10 @@ import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import { newAgeFont } from "@/lib/fonts/font";
 import {
-  Brain,
   Bot,
   Code,
   LayoutTemplate,
   SquareBottomDashedScissors,
-  ChartNoAxesCombined,
   GripVertical,
   Linkedin,
 } from "lucide-react";

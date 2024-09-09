@@ -1,8 +1,6 @@
 "use client";
 
 import { newAgeFont } from "@/lib/fonts/font";
-import { Zap, File, Accessibility } from "lucide-react";
-import { GetStartedBtn } from "@/components/GetStartedBtn";
 import { GetEarlyAccess } from "@/components/GetEarrlyAcess";
 import { MarqueeDemo } from "@/components/ScrollingFeatures";
 export const HeroSection = () => {

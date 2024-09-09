@@ -2,8 +2,6 @@
 import {
   Zap,
   File,
-  ChevronsLeftRightEllipsis,
-  PanelsTopLeft,
 } from "lucide-react";
 import { GetStartedBtn } from "@/components/GetStartedBtn";
 export const HeroSectionActionButtons = () => {
