@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { Slider } from "@/components/Slider";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
-import { cn } from "@/lib/utils";
 import { ExampleSection } from "@/components/ExampleSection";
 import { CtaWithPreviewCards } from "@/components/CtaWithPreviewCards";
 import { Faq } from "@/components/Faq";
@@ -23,7 +22,7 @@ export default function Home() {
         </div>
         <Slider />
       </section>
-      <AnimatedGridPattern
+      {/* <AnimatedGridPattern
         numSquares={100}
         maxOpacity={0.4}
         duration={3}
@@ -32,7 +31,7 @@ export default function Home() {
           "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
         )}
-      />
+      /> */}
       <section
         className="w-full"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}

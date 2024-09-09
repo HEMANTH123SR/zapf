@@ -54,7 +54,7 @@ export function MarqueeDemo() {
           name="Customizable Portfolio"
           Icon={SquareBottomDashedScissors}
         />
-        <FeatureCard name="SEO Optimzation" Icon={ChartNoAxesCombined} />
+        {/* <FeatureCard name="SEO Optimzation" Icon={ChartNoAxesCombined} /> */}
       </Marquee>
     </div>
   );

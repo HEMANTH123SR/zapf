@@ -85,11 +85,12 @@ export function InfiniteMovingCards() {
               className="m-6 border-none shadow-none transition-transform duration-300 "
             >
               <CardContent className="p-4">
-                <img
+                {/* <img
                   src={example.img}
                   alt={`Example ${index + 1}`}
                   className="w-full border rounded-xl h-auto object-cover"
-                />
+                /> */}
+                <div className="w-full h-96 rounded-2xl bg-[#EFEFEE] border-2"></div>
               </CardContent>
               <CardFooter className="p-2 pl-7 flex flex-col justify-start items-start">
                 <h3 className="text-lg font-bold uppercase">

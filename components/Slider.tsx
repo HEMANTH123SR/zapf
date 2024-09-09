@@ -43,89 +43,97 @@ export const Slider = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden " ref={triggerRef}>
+    <section className="overflow-hidden" ref={triggerRef}>
       <div ref={sectionRef} className="flex h-screen w-[240vw]">
         <div className="h-full w-full flex justify-evenly items-center">
           <div className="flex justify-center items-center h-full">
             <div className="flex flex-col space-y-3">
-              <span className="text-[#BABBBA]">solution</span>
+              <span className="text-[#BABBBA]">features</span>
               <div className="flex flex-col text-6xl text-black">
-                <h1 className="font-extrabold">We do things a</h1>
-                <h1 className="font-extralight">bit differently</h1>
+                <h1 className="font-extrabold">Your Portfolio,</h1>
+                <h1 className="font-extralight">Your Way</h1>
               </div>
               <p
                 className={`text-lg tracking-wide text-black py-2 ${newAgeFontBold.className}`}
               >
-                {`Our goal is to be someone we'd want to do business with.`}
+                {`Create a stunning portfolio in minutes, not hours.`}
               </p>
               <div className="flex justify-start items-center">
-                <GetStartedBtn title="get started" Icon={Zap} />
+                <GetStartedBtn title="Build Now" Icon={Zap} />
               </div>
             </div>
           </div>
-          <div className=" flex h-full justify-center items-center">
-            <div className="flex flex-col w-[670px]  p-4">
-              <img
-                className="w-full  h-96 rounded-2xl  h-auto border-2"
-                src="https://cdn.dribbble.com/userupload/15398124/file/original-9d101902a47dbfff7fbb42596d50b922.png?resize=1200x900"
-              />
-              <div className="flex pl-6 flex-col  text-black">
-                <h1 className="text-2xl pt-5 font-semibold capitalize">
-                  Choose A Portfolios
-                </h1>
-                <p className="text-sm font-light capitalize">
-                  pick a portfolio among this vast opitions
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className=" flex h-full justify-center items-center">
-            <div className="flex flex-col w-[670px]  p-4">
-              <img
+          <div className="flex h-full justify-center items-center">
+            <div className="flex flex-col w-[670px] p-4">
+              {/* <img
                 className="w-full h-96 rounded-2xl h-auto border-2"
-                src="https://cdn.dribbble.com/userupload/13028668/file/original-a9166bf7c9ca9544813928b26880462c.png?resize=1200x900"
-              />
-              <div className="flex pl-6 flex-col  text-black">
+                src="/api/placeholder/670/384"
+                alt="Various portfolio templates"
+              /> */}
+              <div className="w-full h-96 rounded-2xl bg-[#EFEFEE] border-2"></div>
+              <div className="flex pl-6 flex-col text-black">
                 <h1 className="text-2xl pt-5 font-semibold capitalize">
-                  Customize your portfolio
+                  Choose Your Style
                 </h1>
                 <p className="text-sm font-light capitalize">
-                  by using our custom portfolio theme you can customize your
-                  portfolio
+                  Select from a variety of professional templates
                 </p>
               </div>
             </div>
           </div>
+          <div className="flex h-full justify-center items-center">
+            <div className="flex flex-col w-[670px] p-4">
+              {/* <img
+                className="w-full h-96 rounded-2xl h-auto border-2"
+                src="/api/placeholder/670/384"
+                alt="Custom theme editor"
+              /> */}
+              <div className="w-full h-96 rounded-2xl bg-[#EFEFEE] border-2"></div>
 
-          <div className=" flex h-full justify-center items-center">
-            <div className="flex flex-col w-[670px]  p-4">
-              <img
-                className="w-full h-96 rounded-2xl h-auto border-2"
-                src="https://cdn.dribbble.com/userupload/6415193/file/original-68117c91bb4a3846a749a5beeb6a4ae2.jpg?resize=1200x900"
-              />
-              <div className="flex pl-6 flex-col  text-black">
+              <div className="flex pl-6 flex-col text-black">
                 <h1 className="text-2xl pt-5 font-semibold capitalize">
-                  Choose A Resume
+                  Customize Your Theme
                 </h1>
                 <p className="text-sm font-light capitalize">
-                  pick a resume among this vast opitions
+                  Personalize colors, fonts, and layouts with ease
                 </p>
               </div>
             </div>
           </div>
-
-          <div className=" flex h-full justify-center items-center">
-            <div className="flex flex-col w-[670px]  p-4">
-              <img
+          <div className="flex h-full justify-center items-center">
+            <div className="flex flex-col w-[670px] p-4">
+              {/* <img
                 className="w-full h-96 rounded-2xl h-auto border-2"
-                src="https://cdn.dribbble.com/userupload/10809716/file/original-c1ecfd6b32f70a0f795b259516c81628.jpg?resize=1200x900"
-              />
-              <div className="flex pl-6 flex-col  text-black">
+                src="/api/placeholder/670/384"
+                alt="LinkedIn profile import"
+              /> */}
+              <div className="w-full h-96 rounded-2xl bg-[#EFEFEE] border-2"></div>
+
+              <div className="flex pl-6 flex-col text-black">
                 <h1 className="text-2xl pt-5 font-semibold capitalize">
-                  Customize you resume
+                  Import from LinkedIn
                 </h1>
                 <p className="text-sm font-light capitalize">
-                  by picking custom resume editor you can customize your resume{" "}
+                  Instantly populate your portfolio with your LinkedIn profile
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex h-full justify-center items-center">
+            <div className="flex flex-col w-[670px] p-4">
+              {/* <img
+                className="w-full h-96 rounded-2xl h-auto border-2"
+                src="/api/placeholder/670/384"
+                alt="AI-powered portfolio assistant"
+              /> */}
+              <div className="w-full h-96 rounded-2xl bg-[#EFEFEE] border-2"></div>
+
+              <div className="flex pl-6 flex-col text-black">
+                <h1 className="text-2xl pt-5 font-semibold capitalize">
+                  Meet Zappy AI
+                </h1>
+                <p className="text-sm font-light capitalize">
+                  Let our AI assistant help craft your perfect portfolio
                 </p>
               </div>
             </div>
