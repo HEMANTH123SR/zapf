@@ -4,7 +4,7 @@ import { Equal } from "lucide-react";
 export const Nav = () => {
   return (
     <header
-      className="w-full z-10 flex justify-between items-center custom-dashed-border px-7 lg:px-14 py-3 lg:py-5 bg-white text-[1.1rem]"
+      className="w-full z-10 flex justify-between items-center custom-dashed-border px-3 lg:px-14 py-3 lg:py-5 bg-white text-[1.1rem]"
       style={{
         backgroundImage: "url('/left-right.svg')",
         fontWeight: "500",
