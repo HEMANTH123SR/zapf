@@ -30,7 +30,7 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
           Transform LinkedIn to Portfolio in seconds
         </h1>
         <h1
-          className="text-[3rem] font-semibold sm:hidden  text-center px-2.5 "
+          className="text-[3.2rem] font-semibold sm:hidden  text-center px-2.5 "
           style={{ lineHeight: 1 }}
         >
           Portfolio in a Zap.
@@ -58,7 +58,7 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
       </div>
       <div className="relative z-50 w-screen flex justify-center items-center">
         <video
-          className="mt-24  -bottom-1/2 border rounded-2xl w-[95vw] h-auto max-h-[80vh]   object-cover object-top"
+          className="mt-8 md:mt-10 xl:mt-24  -bottom-1/2 border rounded-2xl w-[93vw] sm:w-[95vw] h-auto max-h-[80vh]   object-cover object-top"
           autoPlay
           loop
           muted
