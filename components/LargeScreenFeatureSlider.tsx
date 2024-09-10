@@ -86,7 +86,11 @@ export const LargeScreenFeatureSlider: React.FC = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden hidden lg:block" ref={triggerRef}>
+    <section
+      className="overflow-hidden hidden lg:block"
+      ref={triggerRef}
+      style={{ lineHeight: 1, backgroundImage: "url('/top.svg')" }}
+    >
       <div
         ref={sectionRef}
         className=" h-screen flex lg:w-[380vw] xl:w-[300vw]  "

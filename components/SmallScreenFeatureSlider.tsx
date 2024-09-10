@@ -34,7 +34,7 @@ export const SmallScreenFeatureSlider = () => {
     >
       <div className="flex flex-col justify-center items-center space-y-1.5  sm:space-y-2">
         <span className="text-[#BABBBA] text-sm">features</span>
-        <h2 className="text-[3rem] sm:text-[3.7rem] font-semibold  text-center px-2.5 ">
+        <h2 className="text-[2.6rem] sm:text-[3.7rem] font-semibold  text-center px-2.5 ">
           Your Portfolio Your Way
         </h2>
         <p
