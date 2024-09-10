@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Equal } from "lucide-react";
 
 export const Nav = () => {
   return (
@@ -9,7 +9,7 @@ export const Nav = () => {
     >
       <nav className="flex space-x-9 items-center text-black ">
         <Link href={"/"} className="flex items-center justify-center ">
-          <img className="h-10 sm:h-16 w-auto  " src="/zapfolio-logo.png" />
+          <img className="h-14 sm:h-16 w-auto  " src="/zapfolio-logo.png" />
         </Link>
 
         <Link href={"/"} className="lg:block hidden">
@@ -32,12 +32,18 @@ export const Nav = () => {
           </div>
           <Link href={"/sign-in"}>Sign In</Link>
         </div>
-        <div className="p-1.5 rounded-xl bg-[#F2F3F2] border lg:hidden">
-          <Menu
-            className="h-5 w-5 sm:h-8 sm:w-8 cursor-pointer text-[#2C2B2B] "
+        {/* <div className=" lg:hidden">
+          <Equal
+            className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer text-[#2C2B2B] "
             strokeWidth={2.5}
           />
-        </div>
+        </div> */}
+        <Link
+          href={""}
+          className="border  lowercase text-black px-4 py-2 rounded-lg lg:hidden "
+        >
+          Sign In
+        </Link>
         <Link
           href={"/themes"}
           className="bg-black text-white px-4 py-2 rounded-lg lg:block hidden"

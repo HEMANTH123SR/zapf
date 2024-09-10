@@ -30,10 +30,10 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
           Transform LinkedIn to Portfolio in seconds
         </h1>
         <h1
-          className="text-[2.4rem] sm:hidden  text-center px-1.5 "
+          className="text-[3rem] font-semibold sm:hidden  text-center px-2.5 "
           style={{ lineHeight: 1 }}
         >
-          Transform LinkedIn to Portfolio
+          Portfolio in a Zap.
         </h1>
       </div>
 
