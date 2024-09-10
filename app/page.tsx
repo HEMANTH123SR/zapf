@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <PortfoliosExamplesSection />
       </section>
-      {/* <section
+      <section
         className="w-full"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}
       >
@@ -49,7 +49,7 @@ export default function Home() {
         </div>
         <CtaWithPreviewCards />
       </section>
-      <section
+      {/* <section
         className="w-full"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}
       >
@@ -58,7 +58,7 @@ export default function Home() {
           <img className="h-4 w-4 relative -right-2 bottom-2" src="/star.svg" />
         </div>
         <Faq />
-      </section> */}
+      </section>  */}
     </main>
   );
 }
