@@ -9,7 +9,7 @@ export const PortfoliosExamplesSection = () => {
         <h3 className="text-[3.2rem] sm:text-[3.8rem] md:text-[4.5rem] lg:text-[5.4rem] xl:text-8xl text-center px-2.5 ">
           Featured Portfolios
         </h3>
-        <span className="text-black text-lg">
+        <span className="text-black text-lg px-3 text-center">
           Discover How Others Showcase , Their Portfolio On Zapfolio.
         </span>
       </div>

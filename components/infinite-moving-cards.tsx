@@ -44,9 +44,9 @@ const PortfolioCard = ({
   audienceFit: string[];
 }) => {
   return (
-    <Card className="   border-none shadow-none transition-transform duration-300 ">
+    <Card className="  border-none shadow-none transition-transform duration-300 ">
       <CardContent className="p-4">
-        <div className="w-full xl:h-[350px] xl:w-[550px] rounded-2xl bg-[#EFEFEE] border-2"></div>
+        <div className="h-[200px] w-[300px] sm:h-[270px] sm:w-[460px] md:h-[300px] md:w-[490px] lg:h-[320px] lg:w-[520px] xl:h-[350px] xl:w-[550px] rounded-2xl bg-[#EFEFEE] border-2"></div>
       </CardContent>
       <CardFooter className="p-2 pl-7 flex flex-col justify-start items-start">
         <h3 className="text-lg font-bold ">{themeName}</h3>
@@ -71,19 +71,12 @@ export function PortfolioMarquee() {
   const secondRow = PortfolioExamples.slice(halfLength);
 
   return (
-    <div className="relative flex pb-20  w-full flex-col items-center justify-center overflow-hidden ">
-      <Marquee pauseOnHover className="[--duration:40s]">
+    <div className="relative flex  pb-6 sm:pb-8 md:pb-10 lg:pb-12 xl:pb-20  w-full flex-col items-center justify-center overflow-hidden ">
+      <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((example, index) => (
           <PortfolioCard key={`first-${index}`} {...example} />
         ))}
       </Marquee>
-      {/* <Marquee reverse pauseOnHover className="[--duration:40s]">
-        {secondRow.map((example, index) => (
-          <PortfolioCard key={`second-${index}`} {...example} />
-        ))}
-      </Marquee> */}
-      {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div> */}
     </div>
   );
 }
