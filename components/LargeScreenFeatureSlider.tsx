@@ -56,7 +56,7 @@ const slideContents: SlideContentProps[] = [
   },
 ];
 
-export const Slider: React.FC = () => {
+export const LargeScreenFeatureSlider: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLElement>(null);
 
@@ -86,10 +86,10 @@ export const Slider: React.FC = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden" ref={triggerRef}>
+    <section className="overflow-hidden hidden lg:block" ref={triggerRef}>
       <div
         ref={sectionRef}
-        className=" h-screen hidden lg:flex lg:w-[380vw] xl:w-[300vw]  "
+        className=" h-screen flex lg:w-[380vw] xl:w-[300vw]  "
       >
         <div className="h-full w-full flex justify-evenly items-center">
           <div className="flex justify-center items-center h-full">

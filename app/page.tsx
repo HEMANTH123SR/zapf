@@ -1,9 +1,10 @@
 import { HeroSection } from "@/components/HeroSection";
-import { Slider } from "@/components/Slider";
+import { LargeScreenFeatureSlider } from "@/components/LargeScreenFeatureSlider";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { ExampleSection } from "@/components/ExampleSection";
 import { CtaWithPreviewCards } from "@/components/CtaWithPreviewCards";
 import { Faq } from "@/components/Faq";
+import { SmallScreenFeatureSlider } from "@/components/SmallScreenFeatureSlider";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
             src="/star.svg"
           />
         </div>
-        <Slider />
+        <SmallScreenFeatureSlider />
+        <LargeScreenFeatureSlider />
       </section>
       {/* <section
         className="w-full"

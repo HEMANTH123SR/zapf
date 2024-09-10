@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${newAgeFont.className}  overflow-x-hidden  h-full text-black  flex flex-col w-screen px-5 sm:px-7 md:px-10 lg:px-12 xl:px-16 xl:pl-12
+        className={`${newAgeFont.className}  lowercase overflow-x-hidden  h-full text-black  flex flex-col w-screen px-5 sm:px-7 md:px-10 lg:px-12 xl:px-16 xl:pl-12
         
         `}
       >

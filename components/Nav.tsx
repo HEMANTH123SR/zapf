@@ -4,15 +4,19 @@ import { Equal } from "lucide-react";
 export const Nav = () => {
   return (
     <header
-      className="w-full z-10 flex justify-between items-center custom-dashed-border px-7 lg:px-14 py-3 lg:py-5 bg-white "
-      style={{ backgroundImage: "url('/left-right.svg')", fontWeight: "500" }}
+      className="w-full z-10 flex justify-between items-center custom-dashed-border px-7 lg:px-14 py-3 lg:py-5 bg-white text-[1.1rem]"
+      style={{
+        backgroundImage: "url('/left-right.svg')",
+        fontWeight: "500",
+        lineHeight: 1,
+      }}
     >
       <nav className="flex space-x-9 items-center text-black ">
-        <Link href={"/"} className="flex items-center justify-center ">
-          <img className="h-14 sm:h-16 w-auto  " src="/zapfolio-logo.png" />
+        <Link href={"/"} className="flex items-center justify-center mr-4 ">
+          <img className="h-14  w-auto  " src="/full-logo.png" />
         </Link>
 
-        <Link href={"/"} className="lg:block hidden">
+        <Link href={"/"} className="lg:block hidden ">
           Themes
         </Link>
         <Link href={"/"} className="lg:block hidden">
@@ -32,12 +36,7 @@ export const Nav = () => {
           </div>
           <Link href={"/sign-in"}>Sign In</Link>
         </div>
-        {/* <div className=" lg:hidden">
-          <Equal
-            className="h-7 w-7 sm:h-8 sm:w-8 cursor-pointer text-[#2C2B2B] "
-            strokeWidth={2.5}
-          />
-        </div> */}
+
         <Link
           href={""}
           className="border  lowercase text-black px-4 py-2 rounded-lg lg:hidden "
@@ -46,7 +45,7 @@ export const Nav = () => {
         </Link>
         <Link
           href={"/themes"}
-          className="bg-black text-white px-4 py-2 rounded-lg lg:block hidden"
+          className="bg-black text-white px-4 py-2.5 rounded-lg lg:block hidden"
         >
           Get Started
         </Link>
