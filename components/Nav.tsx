@@ -13,7 +13,7 @@ export const Nav = () => {
     >
       <nav className="flex space-x-9 items-center text-black ">
         <Link href={"/"} className="flex items-center justify-center mr-4 ">
-          <img className="h-14  w-auto  " src="/full-logo.png" />
+          <img className="h-10 lg:h-14  w-auto  " src="/full-logo.png" />
         </Link>
 
         <Link href={"/"} className="lg:block hidden ">
