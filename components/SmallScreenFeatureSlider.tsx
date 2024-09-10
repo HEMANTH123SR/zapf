@@ -32,11 +32,11 @@ export const SmallScreenFeatureSlider = () => {
       className="flex flex-col w-full justify-center items-center lg:hidden py-10 px-3"
       style={{ lineHeight: 1, backgroundImage: "url('/top.svg')" }}
     >
-      <div className="flex flex-col  sm:space-y-1.5">
+      <div className="flex flex-col justify-center items-center space-y-1.5  sm:space-y-2">
         <span className="text-[#BABBBA] text-sm">features</span>
-        <h1 className="font-extrabold text-[2.2rem] sm:text-[2.7rem] md:text-[3.4rem] text-black">
-          Your Portfolio, Your Way
-        </h1>
+        <h2 className="text-[3rem] sm:text-[3.7rem] font-semibold   text-center px-2.5 ">
+          Your Portfolio Your Way
+        </h2>
         <p
           className={`text-sm md:text-lg tracking-wide text-black py-2 ${newAgeFontBold.className}`}
         >
@@ -79,16 +79,13 @@ const SlideContent = ({
 }) => {
   return (
     <div
-      className="flex w-11/12 sm:w-10/12  md:w-9/12 justify-center items-center m-4 cursor-pointer"
+      className="flex w-[95%] sm:w-10/12  md:w-9/12 justify-center items-center m-4 cursor-pointer"
       style={{ lineHeight: 1 }}
     >
       <div className="flex flex-col w-full ">
-        <div className="w-full h-64 sm:h-72 md:h-72 rounded-2xl bg-[#EFEFEE] border" />
-        <div className="flex pl-6 flex-col text-black">
-          <h2 className="text-[1.2rem] sm:text-[1.5rem] md:text-[1.6rem] pt-4 md:pt-4 font-semibold capitalize">
-            {title}
-          </h2>
-          <p className="text-xs md:text-sm font-light capitalize">
+        <div className="w-full h-52 sm:h-72 md:h-72 rounded-2xl bg-[#EFEFEE] border" />
+        <div className="flex pl-6  pt-4 flex-col text-black">
+          <p className="text-base  sm:text-xl md:text-2xl font-light capitalize">
             {description}
           </p>
         </div>
