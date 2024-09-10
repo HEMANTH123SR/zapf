@@ -108,25 +108,25 @@ export const GetStartedSmallBtn = ({
     if (roundedDivRef.current && arrowRef.current) {
       timelineRef.current
         .to(roundedDivRef.current, {
-          duration: 0.5,
-          height: "3rem",
-          width: "3rem",
-          borderRadius: "0.5rem",
+          duration: 0.4,
+          height: "2rem",
+          width: "2rem",
+          borderRadius: "0.375rem",
           opacity: 1,
           marginLeft: 0,
         })
         .to(
           arrowRef.current,
           {
-            duration: 0.5,
-            height: "1.75rem",
-            width: "1.75rem",
+            duration: 0.4,
+            height: "1.25rem",
+            width: "1.25rem",
             opacity: 1,
-            x: 40,
+            x: 30,
             color: "#000000",
             display: "block",
           },
-          "-=0.25"
+          "-=0.2"
         );
     }
 
@@ -160,17 +160,17 @@ export const GetStartedSmallBtn = ({
       ref={buttonRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="flex relative items-center justify-center gap-2 h-14 rounded-lg bg-black text-white transition-colors duration-300 text-lg w-auto p-2"
+      className="flex relative items-center justify-center gap-1.5 h-10 rounded-md bg-black text-white transition-colors duration-300 text-base w-auto p-1.5"
     >
       <Icon
         ref={arrowRef}
-        className="absolute z-10 h-7 w-9 opacity-0 -left-6"
+        className="absolute z-10 h-5 w-7 opacity-0 -left-5"
       />
       <div
-        className="h-[0.70rem] w-[0.70rem] rounded-full ml-5 bg-white mr-4"
+        className="h-[0.5rem] w-[0.5rem] rounded-full ml-4 bg-white mr-3"
         ref={roundedDivRef}
       ></div>
-      <span className="pr-5">{title}</span>
+      <span className="pr-4">{title}</span>
     </button>
   );
 };
