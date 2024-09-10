@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Equal } from "lucide-react";
 
 export const Nav = () => {
   return (

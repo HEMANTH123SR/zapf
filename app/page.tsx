@@ -8,7 +8,7 @@ import { SmallScreenFeatureSlider } from "@/components/SmallScreenFeatureSlider"
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col pb-[900px]">
       {/* containes hero section and feature slider */}
       <section
         className="w-full"
