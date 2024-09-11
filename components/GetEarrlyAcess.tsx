@@ -21,7 +21,7 @@ export const GetEarlyAccess = () => {
         />
         <button className="px-4 py-2 xl:py-2.5 min-w-24  opacity-95 rounded-full   bg-[#2C2B2B] text-white text-sm sm:text-base">
           <span className="md:hidden">start now</span>
-          <span className="hidden md:block">Join the Waitlist</span>
+          <span className="hidden md:block">join the waitlist</span>
         </button>
       </div>
     </div>

@@ -29,7 +29,9 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
         >
           {/* Transform LinkedIn to Portfolio in seconds */}
           {/* ship a fresh portfolio site from linkedin */}
-          ship a portfolio site from linkedin in a zap
+          {/* ship a portfolio site from linkedin, in a zap */}
+          {/* ship a fresh portfolio site, straight from linkedin */}
+          ship your portfolio site straight from linkedin
         </h1>
         <h1
           className="text-[3.2rem] font-semibold sm:hidden  text-center px-2.5 "
@@ -45,8 +47,9 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
           className="text-sm text-center px-2 sm:text-base lg:text-[1.15rem] xl:text-xl"
           style={{ lineHeight: "1.25rem" }}
         >
-          Join the waitlist for early and lifetime free access—first 500 users
-          only!
+          {/* Join the waitlist for early and lifetime free access—first 500 users */}
+          {/* only! */}
+          join the beta waitlist! first 500 users get zapfolio free for life
         </h4>
       </div>
 

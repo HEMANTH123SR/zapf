@@ -53,15 +53,6 @@ export const Nav = () => {
         </Link>
       </nav>
       <div className="flex space-x-8 items-center">
-        {/* <div className=" justify-center items-center space-x-2 hidden lg:flex">
-          <div className="relative flex items-center justify-center w-2 h-2">
-            <div className="absolute h-2 w-2 bg-black rounded-full"></div>
-            <div className="absolute h-2 w-2 bg-black rounded-full animate-ping"></div>
-            <div className="absolute h-2 w-2 bg-black opacity-75 rounded-full animate-pulse"></div>
-          </div>
-          <Link href={"/sign-in"}>Sign In</Link>
-        </div> */}
-
         <Link
           href={""}
           className="border text-sm sm:text-base lowercase text-black  px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg lg:hidden "
