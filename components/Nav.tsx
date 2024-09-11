@@ -1,6 +1,29 @@
+"use client";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+const getDaysRemaining = (targetDate: any) => {
+  const today = new Date();
+  const timeDifference = new Date(targetDate).getTime() - today.getTime();
+  const daysRemaining = Math.ceil(timeDifference / (1000 * 3600 * 24));
+  return daysRemaining > 0 ? daysRemaining : 0; // Return 0 if the date has passed
+};
 
 export const Nav = () => {
+  const [daysRemaining, setDaysRemaining] = useState(20);
+  useEffect(() => {
+    // Target date (20 days from today)
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 20);
+
+    // Update days remaining
+    const intervalId = setInterval(() => {
+      setDaysRemaining(getDaysRemaining(targetDate));
+    }, 1000 * 60 * 60 * 24); // Update every day
+
+    // Cleanup interval
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <header
       className="w-full z-10 flex justify-between items-center custom-dashed-border px-3 lg:px-14 py-3 lg:py-5 bg-white text-[1.1rem]"
@@ -40,7 +63,7 @@ export const Nav = () => {
           href={""}
           className="border  lowercase text-black px-4 py-2 rounded-lg lg:hidden "
         >
-          Sign In
+          launch: {daysRemaining}d
         </Link>
         <Link
           href={"/themes"}
@@ -52,3 +75,4 @@ export const Nav = () => {
     </header>
   );
 };
+
