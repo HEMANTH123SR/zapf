@@ -25,9 +25,11 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
       <div className="my-5 sm:my-8 flex flex-col justify-center items-center text-black">
         <h1
           className="text-[2.4rem] hidden sm:block sm:text-[3.8rem] md:text-[4.5rem] lg:text-[5.4rem] xl:text-8xl  text-center px-1.5 sm:px-3 xl:px-14"
-          style={{ lineHeight: 1 }}
+          style={{ lineHeight: 1.1 }}
         >
-          Transform LinkedIn to Portfolio in seconds
+          {/* Transform LinkedIn to Portfolio in seconds */}
+          {/* ship a fresh portfolio site from linkedin */}
+          ship a portfolio site from linkedin in a zap
         </h1>
         <h1
           className="text-[3.2rem] font-semibold sm:hidden  text-center px-2.5 "
@@ -40,10 +42,11 @@ my-10 sm:my-14 lg:my-16 xl:my-20  px-2`}
       {/* sub heading */}
       <div className="flex mt-2 mb-3 flex-col  text-sm text-black justify-center items-center">
         <h4
-          className="text-xs sm:text-base lg:text-[1.15rem] xl:text-xl"
-          style={{ lineHeight: 1 }}
+          className="text-sm text-center px-2 sm:text-base lg:text-[1.15rem] xl:text-xl"
+          style={{ lineHeight: "1.25rem" }}
         >
-          Add you email address to get early access to Zapfolio
+          Join the waitlist for early and lifetime free access—first 500 users
+          only!
         </h4>
       </div>
 

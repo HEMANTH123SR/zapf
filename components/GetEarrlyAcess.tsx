@@ -20,7 +20,8 @@ export const GetEarlyAccess = () => {
           sm:text-base md:text-lg text-[#373636] h-auto  "
         />
         <button className="px-4 py-2 xl:py-2.5 min-w-24  opacity-95 rounded-full   bg-[#2C2B2B] text-white text-sm sm:text-base">
-          start now
+          <span className="md:hidden">start now</span>
+          <span className="hidden md:block">Join the Waitlist</span>
         </button>
       </div>
     </div>
