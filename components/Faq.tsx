@@ -84,10 +84,13 @@ import {
 
 export function Faq() {
   return (
-    <div className="w-full flex flex-col justify-center items-center p-14 lowercase">
-      <div className="w-full flex flex-col justify-start items-start px-2.5">
-        {/* <h2 className="text-sm ml-3 mb-2 text-slate-400">FAQs</h2> */}
-        <h3 className="text-[3.2rem] sm:text-[3.8rem] md:text-[4.5rem] lg:text-[5.4rem] xl:text-8xl text-center  ">
+    <div
+      className="w-full flex flex-col justify-center items-center  p-3 md:p-14 lowercase"
+      style={{ lineHeight: 1 }}
+    >
+      <div className="w-full flex flex-col justify-center items-center px-2.5">
+        <h2 className=" text-sm ml-3 mb-2 text-slate-400">FAQs</h2>
+        <h3 className="text-[2.8rem] sm:text-[3.8rem] md:text-[4.5rem] lg:text-[5.4rem] xl:text-8xl text-center  ">
           Questions → Answers
         </h3>
       </div>

@@ -40,7 +40,7 @@ export default function Home() {
         <PortfoliosExamplesSection />
       </section>
       <section
-        className="w-full"
+        className="w-full hidden md:block"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}
       >
         <div className="flex justify-between w-full">

@@ -6,7 +6,7 @@ export const PortfoliosExamplesSection = () => {
         <span className="text-sm lg:text-base text-[#C5C5C4] rounded-md px-2.5 py-0.5 border">
           Example
         </span>
-        <h3 className="text-[3.2rem] sm:text-[3.8rem] md:text-[4.5rem] lg:text-[5.4rem] xl:text-8xl text-center px-2.5 ">
+        <h3 className="text-[2.8rem] sm:text-[3.8rem] md:text-[4.5rem] lg:text-[5.4rem] xl:text-8xl text-center px-2.5 ">
           Featured Portfolios
         </h3>
         <span className="text-black text-lg px-3 text-center">
