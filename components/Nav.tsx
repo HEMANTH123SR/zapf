@@ -10,11 +10,11 @@ const getDaysRemaining = (targetDate: any) => {
 };
 
 export const Nav = () => {
-  const [daysRemaining, setDaysRemaining] = useState(20);
+  const [daysRemaining, setDaysRemaining] = useState(22);
   useEffect(() => {
     // Target date (20 days from today)
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 20);
+    targetDate.setDate(targetDate.getDate() + 22);
 
     // Update days remaining
     const intervalId = setInterval(() => {

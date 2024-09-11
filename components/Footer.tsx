@@ -1,4 +1,3 @@
-
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -27,9 +26,9 @@ export const Footer = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <footer className=" text-black py-16 px-6">
+    <footer className=" text-black pb-6 lg:py-16 sm:px-3 md:px-6 lg:bg-slate-50 xl:bg-slate-100">
       <div className=" flex flex-col">
-        <div className="flex px-12 w-full justify-between items-start">
+        <div className=" hidden xl:flex px-12 w-full justify-between items-start">
           <div className="">
             <div className="flex space-x-1.5 justify-start items-center mb-4 pl-5">
               <div className="h-2 w-2 bg-black rounded-full mb-1"></div>
@@ -104,7 +103,7 @@ export const Footer = () => {
           <div className="">
             <div className="flex space-x-1.5 justify-start items-center mb-4 pl-5">
               <div className="h-2 w-2 bg-black rounded-full mb-2"></div>
-              <h3 className="text-lg font-semibold">Other Links</h3>
+              <h3 className="text-lg font-semibold">Legals</h3>
             </div>
             <div className="grid grid-cols-1 gap-4">
               {["Privacy Policy", "Terms of Service"].map((link) => (
@@ -123,38 +122,51 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* <div
-          className="mt-8 pt-8   flex flex-wrap justify-between items-center"
-          style={{
-            backgroundImage: "url('/top.svg')",
-          }}
-        >
-          <div className="w-full flex justify-center items-center">
-            <img
-              className="w-full px-6"
-              alt="logo"
-              src="zapfolio-text-logo-background-white.png"
-            />
+        <div className="flex flex-col px-1.5 w-full justify-center items-center xl:hidden">
+          <div className="text-[2.5rem] py-4 sm:text-[3.3rem] md:text-[4.2rem] lg:text-[5.0rem font-semibold sm:hidden  text-center px-2.5 ">
+            Quick Links
           </div>
-        </div> */}
-        {/* Bottom - Social Media and Legal */}
+          <div className="flex flex-wrap justify-center items-center gap-3">
+            {[
+              "Support",
+              "Dashboard",
+              "Pricing",
+              "About Us",
+              "How It Works",
+              "Testimonials",
+              "Privacy Policy",
+              "Terms of Service",
+            ].map((link) => (
+              <div key={link} className="flex  justify-center items-center">
+                <Link
+                  href={`/${link.toLowerCase().replace(" ", "-")}`}
+                  className="text-sm transition-colors bg-[#F2F3F2] w-full text-center rounded-xl border px-3 py-1.5"
+                >
+                  {link}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div
           className="mt-8 pt-8   flex flex-wrap justify-between items-center"
           style={{ backgroundImage: "url('/top.svg')" }}
         ></div>
 
-        <div className="px-3  mx-auto">
+        <div className=" md:px-3   mx-auto">
           <img
-            className="w-full h-auto "
-            src="/zapfolio-text-logo-background-white.png"
+            className="w-full h-auto pb-7"
+            src="/full-logo.png"
             alt="Zapfolio Logo"
           />
 
-          <div className="flex flex-col px-6 sm:flex-row justify-between items-center text-xs sm:text-sm">
-            <p className="mb-2 sm:mb-0">© Zapfolio</p>
-            <p className="mb-2 sm:mb-0">Bangalore → {currentTime}</p>
-            <p>hello@zapfolio.com</p>
+          <div className="flex f px-6 flex-row justify-center md:justify-between  items-center text-xs sm:text-sm">
+            <p className="mb-2 hidden md:block">© Zapfolio</p>
+            <p className="mb-2 hidden md:block ">Bangalore → {currentTime}</p>
+            <p className="flex justify-center items-center">
+              support@zapfolio.in
+            </p>
           </div>
         </div>
       </div>
