@@ -26,7 +26,7 @@ export const Footer = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <footer className=" text-black pb-6 lg:py-16 sm:px-3 md:px-6 lg:bg-slate-50 xl:bg-slate-100">
+    <footer className=" text-black pb-6 lg:py-16 sm:px-3 md:px-6 ">
       <div className=" flex flex-col">
         <div className=" hidden xl:flex px-12 w-full justify-between items-start">
           <div className="">
