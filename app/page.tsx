@@ -1,6 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
 import { LargeScreenFeatureSlider } from "@/components/LargeScreenFeatureSlider";
-import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { PortfoliosExamplesSection } from "@/components/ExampleSection";
 import { CtaWithPreviewCards } from "@/components/CtaWithPreviewCards";
 import { Faq } from "@/components/Faq";
@@ -8,7 +7,7 @@ import { SmallScreenFeatureSlider } from "@/components/SmallScreenFeatureSlider"
 
 export default function Home() {
   return (
-    <main className="flex flex-col pb-[900px]">
+    <main className="flex flex-col">
       {/* containes hero section and feature slider */}
       <section
         className="w-full"
@@ -39,6 +38,7 @@ export default function Home() {
         </div>
         <PortfoliosExamplesSection />
       </section>
+      {/* cta section with portfolio demons  */}
       <section
         className="w-full hidden md:block"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}
@@ -49,6 +49,7 @@ export default function Home() {
         </div>
         <CtaWithPreviewCards />
       </section>
+      {/* faq section */}
       <section
         className="w-full"
         style={{ backgroundImage: "url('/top-left-right.svg')" }}

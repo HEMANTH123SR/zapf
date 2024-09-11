@@ -23,7 +23,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
-        {/* <section
+        <section
           className="w-full"
           style={{ backgroundImage: "url('/top-left-right.svg')" }}
         >
@@ -38,7 +38,7 @@ export default function RootLayout({
             />
           </div>
           <Footer />
-        </section> */}
+        </section>
       </body>
     </html>
   );

@@ -35,7 +35,10 @@ export const Nav = () => {
     >
       <nav className="flex space-x-9 items-center text-black ">
         <Link href={"/"} className="flex items-center justify-center mr-4 ">
-          <img className="h-10 lg:h-14  w-auto  " src="/full-logo.png" />
+          <img
+            className="h-[2.4rem] sm:h-10 lg:h-14  w-auto  "
+            src="/full-logo.png"
+          />
         </Link>
 
         <Link href={"/"} className="lg:block hidden ">
@@ -50,18 +53,18 @@ export const Nav = () => {
         </Link>
       </nav>
       <div className="flex space-x-8 items-center">
-        <div className=" justify-center items-center space-x-2 hidden lg:flex">
+        {/* <div className=" justify-center items-center space-x-2 hidden lg:flex">
           <div className="relative flex items-center justify-center w-2 h-2">
             <div className="absolute h-2 w-2 bg-black rounded-full"></div>
             <div className="absolute h-2 w-2 bg-black rounded-full animate-ping"></div>
             <div className="absolute h-2 w-2 bg-black opacity-75 rounded-full animate-pulse"></div>
           </div>
           <Link href={"/sign-in"}>Sign In</Link>
-        </div>
+        </div> */}
 
         <Link
           href={""}
-          className="border  lowercase text-black px-4 py-2 rounded-lg lg:hidden "
+          className="border text-sm sm:text-base lowercase text-black  px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg lg:hidden "
         >
           launch: {daysRemaining}d
         </Link>
@@ -69,10 +72,9 @@ export const Nav = () => {
           href={"/themes"}
           className="bg-black text-white px-4 py-2.5 rounded-lg lg:block hidden"
         >
-          Get Started
+          launching in {daysRemaining}d
         </Link>
       </div>
     </header>
   );
 };
-
